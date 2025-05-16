@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+$gutter: 1rem; //for primeflex grid system
+/* PrimeNG */
+@import "../node_modules/primeng/resources/themes/lara-light-blue/theme.css";
+@import "../node_modules/primeng/resources/primeng.css";
+@import "../node_modules/primeflex/primeflex.css";
+@import "../node_modules/primeicons/primeicons.css";
+
+@import "./assets/custome/custome.scss";
+:root {
+  --custom-main: #ffb1ad;
+  --custom-main2: #ff837c;
+  --custom-sub: #FDEBEC;
+}
+.bg-main {
+  background-color: var(--custom-main);
+}
+.bg-main2 {
+  background-color: var(--custom-main2);
+}
+.bg-sub {
+  background-color: var(--custom-sub);
+}
+.color-main {
+  background-color: var(--custom-main);
+}
+.color-sub {
+  background-color: var(--custom-sub);
+}
+body {
+  margin: 0;
+  height: 100dvh;
+  min-height: -webkit-fill-available;
+}
+html {
+  height: -webkit-fill-available;
+}
+
+
+
+
+.square-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}

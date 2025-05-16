@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'slider';
+  layoutNumber = 0;
+  tranferLayout(numberLayout : number) {
+    this.layoutNumber = numberLayout;
+  }
 }

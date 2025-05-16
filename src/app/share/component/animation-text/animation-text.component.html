@@ -1,0 +1,9 @@
+<p *ngIf="show" [@textAnimation] [class]="textStyle">
+  <ng-container  *ngFor="let char of characters">
+    <ng-container [ngSwitch]="char">
+      <span *ngSwitchCase="' '" [class]="'char'">&nbsp;</span>
+      <br *ngSwitchCase="'|'" [class]="'char'" >
+      <span *ngSwitchDefault [class]="'char'" >{{ char }}</span>
+    </ng-container>
+  </ng-container>
+</p>

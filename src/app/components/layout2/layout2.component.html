@@ -1,0 +1,27 @@
+
+<div class="h-full bg-sub flex flex-column justify-content-evenly">
+  <div class="h-full flex align-items-center justify-content-center h-3rem w-full bg-main">
+    <app-animation-text [text]="textHead" [timeOut]="timeOutHead" [textStyle]="'text-4xl text-0'"></app-animation-text>
+  </div>
+  <div class="square-box bg-main">
+    <div class="p-5 h-full flex flex-column justify-content-around">
+      <div class="flex flex-column justify-content-around h-4">
+        <app-animation-text [text]="textBody1" [timeOut]="timeOutBody1"
+          [textStyle]="'text-xl text-0'"></app-animation-text>
+        <app-animation-text [text]="textBody2" [timeOut]="timeOutBody2"
+          [textStyle]="'text-xl text-0 text-center'"></app-animation-text>
+      </div>
+      <div class="align-self-center">
+        <img src="../../../assets/gif/meo_gym.gif" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="h-5rem w-full">
+    <div class="h-full flex align-items-center justify-content-center gap-5">
+      <button (click)="nextAction.emit(0)" pButton class="bg-main2 border-0"><i class="pi pi-arrow-left"></i></button>
+      <button (click)="nextAction.emit(2)" pButton class="bg-main2 border-0"><i class="pi pi-arrow-right"></i></button>
+
+    </div>
+  </div>
+</div>
